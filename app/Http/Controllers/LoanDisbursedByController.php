@@ -43,9 +43,10 @@ class LoanDisbursedByController extends Controller
      */
     public function create()
     {
+        $data = LoanDisbursedBy::all();
 
         //get custom fields
-        return view('loan_disbursed_by.create', compact(''));
+        return view('loan_disbursed_by.create', compact('data'));
     }
 
     /**

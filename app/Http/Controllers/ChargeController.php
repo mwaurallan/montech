@@ -44,8 +44,8 @@ class ChargeController extends Controller
      */
     public function create()
     {
-
-        return view('charge.create', compact(''));
+        $data = Charge::all();
+        return view('charge.create',compact('data'));
     }
 
     /**
